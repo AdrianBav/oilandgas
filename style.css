@@ -1,0 +1,493 @@
+@import url("main-style.css");
+
+/* ----------------------------------------
+	Please, You may put custom css here
+---------------------------------------- */
+
+
+/* ----------------------------------------
+	Common
+---------------------------------------- */
+body h3 {
+	letter-spacing: 0px;
+}
+body h4 {
+	margin-bottom:8px;
+}
+.primary-text {
+	color: #74AED4;
+}
+
+
+/* ----------------------------------------
+	Header
+---------------------------------------- */
+body .logo {
+	top: 20px;
+}
+
+body .header {
+	background:#fff;
+	border-bottom: solid 10px #e1e1e1;
+	margin:0;
+	padding:25px 0 37px 0;;
+}
+
+body .header .logo p {
+	color: #303336;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 1.5;
+	text-transform: none;
+	float: none;
+	margin-top: 22px;
+	width: 360px;
+	position: absolute;
+	top: 5px;
+	left: 175px;
+	width: 210px;
+}
+@media (min-width: 979px) and (max-width: 1200px) {
+	body .header .logo p {
+		background:none;
+		float:none;
+		width:100%;
+		overflow:hidden;
+		margin:0;
+		padding:0;
+		line-height:18px;
+		text-align:center;
+	}
+}
+html.ie8 body .header .logo p {
+	background:none;
+	float:none;
+	width:100%;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	line-height:18px;
+	text-align:center;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	body .header .logo p { display: none; }
+}
+@media (max-width: 767px) {
+	body .header .logo { margin-bottom: 10px; }
+	body .header .logo p { display: none; }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	body .header .nav__primary .sf-menu > li > a { padding:6px 8px 8px 8px; }
+}
+
+body .header .nav__primary .sf-menu > li {
+	margin-left: 5px;
+}
+body .header .nav__primary .sf-menu > li > a {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* ----------------------------------------
+	Navigation
+---------------------------------------- */
+
+.header .nav__primary .sf-menu > li.current-page-ancestor > a {
+	background:url(images/menu.gif) repeat-x 0% 0%;
+	color:#fff;
+}
+
+
+/* ----------------------------------------
+	Footer
+---------------------------------------- */
+body .footer {
+	background:#2d2d2f;
+	padding:20px 20px 0;
+}
+body .footer div.info {
+	margin:0;
+	padding:0;
+}
+body .footer ul li a {
+	color:#ffffff;
+	font-size: 14px;
+}
+body .footer .footer-text {
+	margin:20px 0;
+	color:#ffffff;
+	text-align:right;
+}
+
+.footer div.footer-telephone h4 {
+	display: none;
+}
+.footer div.footer-telephone .textwidget {
+	color: #72aad0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+}
+.footer div.footer-telephone .textwidget p span {
+	font-size: 18px;
+	margin-left: 5px;
+}
+.footer div.footer-tagline h4 {
+	display: none;
+}
+.footer div.footer-tagline .textwidget {
+	color: #72aad0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: italic;
+}
+
+body .footer nav.footer-nav {
+	width:100%;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+body .footer nav.footer-nav ul { float:right; }
+body .footer nav.footer-nav ul li {
+	float: left;
+	background:none;
+	padding:0;
+	margin-right: 0;
+}
+body .footer nav.footer-nav ul li:not(:last-child) {
+	margin:0 18px 0 0;
+}
+body .footer nav.footer-nav ul li a {
+	color:#ffffff;
+	font-size: 13px;
+	font-weight: normal;
+}
+body .footer nav.footer-nav ul li a:hover,
+body .footer nav.footer-nav ul li.current-menu-item a {
+	color:#ffffff;
+	text-decoration:underline;
+}
+
+/* ----------------------------------------
+	Home Page
+---------------------------------------- */
+body #slider-wrapper .camera_pag {
+	bottom: 5px;
+	left: 30px;
+}
+body #slider-wrapper .camera_caption {
+	top: 140px;
+	left: 0px;
+}
+
+body #slider-wrapper {
+	border-bottom:25px solid #e1e1e1;
+}
+body #slider-wrapper:before {
+	border-bottom:25px solid #e1e1e1;
+}
+body #slider-wrapper:after {
+	border-bottom:25px solid #e1e1e1;
+}
+
+@media (min-width: 979px) and (max-width: 1200px) {
+	body #slider-wrapper .camera_caption { top:100px; width:450px; }
+}
+body html.ie8 #slider-wrapper .camera_caption {
+	top:100px;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	body #slider-wrapper .camera_caption { top:80px; width:380px; }
+}
+@media (max-width: 767px) {
+	body #slider-wrapper .camera_caption { top:10px; left:30px; width:250px; }
+}
+
+body #slider-wrapper .camera_caption div {
+	background-color: rgba(45, 45, 47, 0.39);
+	padding: 20px 5px 1px 30px;
+}
+@media (min-width: 979px) and (max-width: 1200px) {
+	body #slider-wrapper .camera_caption div { padding-top: 15px; }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	body #slider-wrapper .camera_caption div { padding-top: 10px; }
+}
+@media (max-width: 767px) {
+	body #slider-wrapper .camera_caption div { padding: 10px 10px 1px 10px; }
+}
+
+body #slider-wrapper .camera_caption em {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:42px;
+	line-height: 1;
+	letter-spacing:-1px;
+	text-transform:none;
+}
+@media (min-width: 979px) and (max-width: 1200px) {
+	body #slider-wrapper .camera_caption em { font-size:33px; }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	body #slider-wrapper .camera_caption em { font-size:27px; line-height: 0.9; }
+}
+@media (max-width: 767px) {
+	body #slider-wrapper .camera_caption em { font-size:18px; line-height: 0.9; }
+}
+
+body #slider-wrapper .camera_caption p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:26px;
+	font-weight:normal;
+	line-height:1;
+	text-transform:none;
+}
+@media (min-width: 979px) and (max-width: 1200px) {
+	body #slider-wrapper .camera_caption p { font-size:18px; }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	body #slider-wrapper .camera_caption p { font-size:15px; line-height: 0.5; }
+}
+@media (max-width: 767px) {
+	body #slider-wrapper .camera_caption p { font-size:12px; line-height: 0.5; }
+}
+
+p.tagline {
+	color: #474747;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 1.5;
+	text-align: center;
+	margin: 20px 0 40px;
+}
+p.tagline span {
+	font-size: 22px;
+}
+.home .home-box > div {
+	color: #303336;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0 40px 0 10px;
+}
+.home .home-box h3 {
+	color: #303336;
+	font-weight: bold;
+	text-transform: none;
+}
+.home .home-box p {
+	font-size: 16px;
+	line-height: 1.25;
+}
+.home .home-box a {
+	font-size: 12px;
+	text-transform: none;
+}
+.home .home-box a.read-more {
+	text-transform: uppercase;
+}
+
+
+/* ----------------------------------------
+	Sub-menu
+---------------------------------------- */
+body #sidebar ul li {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+
+/* ----------------------------------------
+	Services Page
+---------------------------------------- */
+body h3 a {
+	color:#74AED4;
+}
+body h3 a:hover {
+	color:#474747;
+}
+.dropcap-padding {
+	padding-left: 55px;
+}
+.mb2 {
+	margin-bottom: 2px;
+}
+
+
+/* ----------------------------------------
+	Track Record Page
+---------------------------------------- */
+
+body #gallery-1 .gallery-item {
+	margin: 10px;
+	width: 30%;
+}
+
+
+/* ----------------------------------------
+	Tombstone Page
+---------------------------------------- */
+.tombstone-list li {
+	margin-left: 0;
+}
+.tombstones {
+	color: #000000;
+	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+	font-size: 10px;
+}
+.tombstones > div {
+	border: 12px solid #252d67;
+	padding: 5px;
+}
+.tombstones > div > section {
+	border: 1px solid #ffc000;
+	padding: 10px;
+}
+.tombstones header {
+	text-align: center;
+}
+.tombstones header .business-logo {
+	width: 219px;
+	height: 31px;
+	margin: 12px auto;
+}
+	.tombstones header .business-logo img {
+		max-height: 31px;
+	}
+.tombstones header .business-name {
+	color: #252d67;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 31px;
+}
+.tombstones header .business-name span {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+.tombstones header .summary {
+	font-style: italic;
+	margin: 5px 0 10px 0;
+}
+.tombstones header .sold-text {
+	margin: 10px 0;
+}
+.tombstones footer {
+	font-size: 9px;
+	margin-top: 10px;
+	padding: 0 10px;
+}
+.tombstones footer p {
+	line-height: 14px;
+	margin-bottom: 10px;
+}
+.tombstones footer .logo {
+	margin-right: 20px;
+}
+.tombstones footer .role {
+	text-align: center;
+	overflow: hidden;
+}
+
+.tombstones footer .role .signature {
+	font-style: italic;
+	margin-bottom: 0;
+}
+
+
+/* ----------------------------------------
+	Award Page
+---------------------------------------- */
+.award_content {
+	word-wrap:break-word;
+	-webkit-hyphens:auto;
+	-moz-hyphens:auto;
+	-ms-hyphens:auto;
+	-o-hyphens:auto;
+	hyphens:auto;
+	padding-bottom:0px;
+	overflow: hidden;
+}
+.award_content .post-title {
+	margin-top: 0;
+}
+
+/* ----------------------------------------
+	Affiliations
+---------------------------------------- */
+.affiliations_content {
+	word-wrap:break-word;
+	-webkit-hyphens:auto;
+	-moz-hyphens:auto;
+	-ms-hyphens:auto;
+	-o-hyphens:auto;
+	hyphens:auto;
+	padding-bottom:0px;
+	overflow: hidden;
+}
+.affiliations_content .post-title {
+	margin-top: 0;
+}
+
+/* ----------------------------------------
+	Our Team
+---------------------------------------- */
+.ourteam_content {
+	word-wrap:break-word;
+	-webkit-hyphens:auto;
+	-moz-hyphens:auto;
+	-ms-hyphens:auto;
+	-o-hyphens:auto;
+	hyphens:auto;
+	padding-bottom:0px;
+	overflow: hidden;
+}
+.ourteam_content .post-title {
+	margin-top: 0;
+}
+
+/* ----------------------------------------
+	Contact Page
+---------------------------------------- */
+body .google-map {
+	margin-bottom:20px;
+}
+
+/* ----------------------------------------
+	Custom
+---------------------------------------- */
+
+body #sidebar ul li {
+	background:none;
+	margin:0;
+	padding:15px 0 16px 9px;
+	list-style:none;
+	line-height:18px;
+	font-size:13px;
+	font-weight:400;
+	border-top:1px solid #ddd;
+	color:#74AED4;
+}
+
+	body #sidebar ul li ul li {
+		padding:15px 0 16px 15px;
+	}
+
+body #sidebar ul li a {
+    color: #74AED4;
+    text-decoration: none;
+}
+
+body .testimonials .testi-item small.testi-meta {
+	padding:10px 20px 0 0;
+	line-height:18px;
+	font-size:12px;
+	text-align:right;
+	text-transform:uppercase;
+	color:#74AED4;
+}
+
+body #content ol li {
+	padding-bottom: 10px;
+}
